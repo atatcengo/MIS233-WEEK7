@@ -190,6 +190,22 @@ export default function TaskApp() {
         
         <div style={{ position: "absolute", top: "16px", right: "24px", fontSize: "0.9rem", opacity: 0.7 }}>
           Logged as: <strong>{currentUser}</strong>
+          <button 
+        onClick={() => setCurrentUser(null)} 
+        style={{ 
+          marginLeft: "10px",
+          padding: "6px 12px", 
+          fontSize: "0.85rem", 
+          background: "transparent", 
+          border: "1px solid #ddd", 
+          color: "#666",
+          cursor: "pointer",
+          borderRadius: "6px"
+        }}
+        title="Log out"
+      >
+        Logout
+      </button>
         </div>
         {/* top bar: search + quick add button */}
         <div style={{ display: "flex", gap: 8, alignItems: "center", marginTop: 12, maxWidth: "100%" }}>
